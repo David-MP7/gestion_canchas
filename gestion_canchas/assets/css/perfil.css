@@ -1,0 +1,217 @@
+body {
+        margin: 0;
+        background-color: #f4f6f8;
+        font-family: 'Poppins', sans-serif;
+        color: #333;
+    }
+
+    /* ==============================
+       NAVBAR
+    ============================== */
+
+    .navbar {
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .navbar-brand {
+        font-weight: 700;
+        color: #198754 !important;
+        font-size: 22px;
+    }
+
+    .navbar-brand i {
+        margin-right: 7px;
+    }
+
+    .nav-link {
+        color: #333 !important;
+        font-weight: 500;
+        margin-left: 8px;
+    }
+
+    .nav-link:hover {
+        color: #198754 !important;
+    }
+
+    .btn-navbar {
+        border-radius: 8px;
+        font-weight: 500;
+        margin-left: 8px;
+    }
+
+    /* ==============================
+       CONTENIDO
+    ============================== */
+
+    .perfil-container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    /* ==============================
+       TARJETA PERFIL
+    ============================== */
+
+    .perfil-card {
+        background: white;
+        border-radius: 16px;
+        padding: 35px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .perfil-header {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .foto-perfil {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #198754;
+    }
+
+    .nombre-usuario {
+        margin: 0;
+        font-weight: 700;
+    }
+
+    .profesion {
+        color: #777;
+        margin-top: 5px;
+    }
+
+    /* ==============================
+       INFORMACION
+    ============================== */
+
+    .seccion {
+        margin-top: 30px;
+    }
+
+    .titulo-seccion {
+        font-size: 21px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #198754;
+    }
+
+    .info-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 12px;
+    }
+
+    .info-item i {
+        font-size: 22px;
+        color: #198754;
+    }
+
+    .info-item p {
+        margin: 0;
+    }
+
+    .info-label {
+        font-size: 13px;
+        color: #777;
+    }
+
+    /* ==============================
+       RESERVAS
+    ============================== */
+
+    .reserva-card {
+        border: none;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        transition: 0.2s;
+        height: 100%;
+    }
+
+    .reserva-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+    }
+
+    .reserva-header {
+        background-color: #198754;
+        color: white;
+        padding: 18px;
+    }
+
+    .reserva-header h5 {
+        margin: 0;
+        font-weight: 600;
+    }
+
+    .reserva-body {
+        padding: 20px;
+    }
+
+    .reserva-info {
+        margin-bottom: 12px;
+    }
+
+    .reserva-info i {
+        color: #198754;
+        margin-right: 8px;
+    }
+
+    .estado {
+        display: inline-block;
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 600;
+        background-color: #d1e7dd;
+        color: #0f5132;
+    }
+
+    /* ==============================
+       SIN RESERVAS
+    ============================== */
+
+    .sin-reservas {
+        text-align: center;
+        background: #f8f9fa;
+        padding: 40px 20px;
+        border-radius: 12px;
+    }
+
+    .sin-reservas i {
+        font-size: 45px;
+        color: #198754;
+    }
+
+    /* ==============================
+       RESPONSIVE
+    ============================== */
+
+    @media (max-width: 768px) {
+
+        .perfil-header {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .navbar .btn-navbar {
+            margin-left: 0;
+            margin-top: 8px;
+        }
+
+        .perfil-card {
+            padding: 20px;
+        }
+
+    }
