@@ -49,10 +49,7 @@ switch ($action) {
 
       break;
 
-  default:
-      echo json_encode(["error" => "Ruta no válida"]);
-}
-case 'login':
+      case 'login':
 
     $email = $_POST['email'] ?? '';
     $contrasena = $_POST['contrasena'] ?? '';
@@ -74,4 +71,9 @@ case 'login':
     }
 
     break;
+
+  default:
+      echo json_encode(["error" => "Ruta no válida"]);
+}
+
 ?>

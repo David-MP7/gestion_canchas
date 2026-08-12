@@ -42,7 +42,7 @@ $conn->close();
 
 <head>
 
-```
+
 <meta charset="UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,7 +64,7 @@ $conn->close();
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
 
-    <link  rel="stylesheet" href="../assets/css/perfil.css">
+    <link  rel="stylesheet" href="./assets/css/perfil.css">
 
 
 </head>
@@ -75,74 +75,186 @@ $conn->close();
      NAVBAR
 ============================== -->
 
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top shadow-sm">
 
-```
-<div class="container">
+    <div class="container">
 
-    <a class="navbar-brand" href="index.html">
-        <i class="bi bi-dribbble"></i>
-        Reserva Canchas
-    </a>
+        <!-- LOGO -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+
+            <img
+                src="assets/img/logo.png"
+                width="50"
+                height="50"
+                class="logo-navbar"
+                alt="Logo Reserva Canchas"
+            >
+
+            <div class="brand-text">
+                <span class="brand-title">Reserva</span>
+                <span class="brand-subtitle">Canchas</span>
+            </div>
+
+        </a>
 
 
-    <!-- Botón móvil -->
+        <!-- BOTÓN MÓVIL -->
 
-    <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarMenu">
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Abrir menú">
 
-        <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
 
-    </button>
+        </button>
 
 
-    <div
-        class="collapse navbar-collapse"
-        id="navbarMenu">
+        <!-- MENÚ -->
 
-        <ul class="navbar-nav ms-auto align-items-lg-center">
+        <div
+            class="collapse navbar-collapse"
+            id="navbarMenu">
 
-            <li class="nav-item">
-                <a class="nav-link" href="canchas.php">
-                    <i class="bi bi-grid"></i>
-                    Canchas
-                </a>
-            </li>
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
 
-            <li class="nav-item">
-                <a class="nav-link" href="mis_reservas.php">
-                    <i class="bi bi-calendar-check"></i>
-                    Mis reservas
-                </a>
-            </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="carrito.php">
-                    <i class="bi bi-cart3"></i>
-                    Carrito
-                </a>
-            </li>
+                <!-- CANCHAS -->
 
-            <li class="nav-item">
-                <a
-                    class="btn btn-success btn-navbar"
-                    href="logout.php">
+                <li class="nav-item">
 
-                    <i class="bi bi-box-arrow-right"></i>
-                    Cerrar sesión
+                    <a class="nav-link active" href="canchas.php">
 
-                </a>
-            </li>
+                        <i class="bi bi-grid-3x3-gap-fill"></i>
 
-        </ul>
+                        <span>Canchas</span>
+
+                    </a>
+
+                </li>
+
+
+                <!-- RESERVAS -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="mis_reservas.php">
+
+                        <i class="bi bi-calendar-check"></i>
+
+                        <span>Mis reservas</span>
+
+                    </a>
+
+                </li>
+
+
+                <!-- CARRITO -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link carrito-link" href="carrito.php">
+
+                        <span class="carrito-icon">
+
+                            <i class="bi bi-cart3"></i>
+
+                            <span class="carrito-badge">0</span>
+
+                        </span>
+
+                        <span>Carrito</span>
+
+                    </a>
+
+                </li>
+
+
+                <!-- SEPARADOR -->
+
+                <li class="nav-divider"></li>
+
+
+                <!-- USUARIO -->
+
+                <li class="nav-item dropdown">
+
+                    <a
+                        class="nav-link usuario-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+
+                        <span class="usuario-icon">
+
+                            <i class="bi bi-person-fill"></i>
+
+                        </span>
+
+                        <span>Mi cuenta</span>
+
+                    </a>
+
+
+                    <ul class="dropdown-menu dropdown-menu-end">
+
+                        <li>
+
+                            <a class="dropdown-item" href="perfil.php">
+
+                                <i class="bi bi-person me-2"></i>
+
+                                Mi perfil
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a class="dropdown-item" href="mis_reservas.php">
+
+                                <i class="bi bi-calendar-check me-2"></i>
+
+                                Mis reservas
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+
+                        <li>
+
+                            <a class="dropdown-item logout-item" href="logout.php">
+
+                                <i class="bi bi-box-arrow-right me-2"></i>
+
+                                Cerrar sesión
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </div>
 
     </div>
-
-</div>
-```
 
 </nav>
 
@@ -152,7 +264,7 @@ $conn->close();
 
 <main class="perfil-container">
 
-```
+
 <div class="perfil-card">
 
 

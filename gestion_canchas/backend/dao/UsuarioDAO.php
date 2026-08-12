@@ -36,6 +36,8 @@ function getUsuario($id) {
 function agregarUsuario($nombre, $apellido, $telefono, $email, $contrasena) {
   $conn = conectar();
 
+  $hash = password_hash($contrasena, PASSWORD_DEFAULT);
+
   $stmt = $conn->prepare("Insert into usuarios(nombre, apellido, telefono, email, contrasena) 
   values(?, ?, ?, ?, ?)"
   );
@@ -46,7 +48,7 @@ function agregarUsuario($nombre, $apellido, $telefono, $email, $contrasena) {
   $apellido, 
   $telefono, 
   $email, 
-  $contrasena);
+  $hash);
 
   return $stmt->execute();
 }
